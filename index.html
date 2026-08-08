@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CeylonRiders - Premium Motorbike &amp; Scooter Rentals Sri Lanka</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f3f4",
+                        "background": "#f9f9f9",
+                        "on-surface-variant": "#544438",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed": "#410000",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#663500",
+                        "surface-variant": "#e2e2e2",
+                        "outline-variant": "#d9c2b3",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "secondary": "#586062",
+                        "on-primary-fixed": "#2f1500",
+                        "surface-tint": "#904d00",
+                        "inverse-surface": "#2f3131",
+                        "primary-container": "#f2994a",
+                        "tertiary": "#c00104",
+                        "on-secondary-fixed-variant": "#41484a",
+                        "tertiary-fixed": "#ffdad5",
+                        "secondary-fixed": "#dde4e6",
+                        "secondary-container": "#dae1e3",
+                        "on-surface": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "deep-slate": "#2D3436",
+                        "inverse-primary": "#ffb77d",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "on-tertiary-container": "#890002",
+                        "on-secondary-fixed": "#161d1f",
+                        "warm-gold": "#F2994A",
+                        "surface-dim": "#dadada",
+                        "primary-fixed": "#ffdcc3",
+                        "on-secondary-container": "#5d6466",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#ffb77d",
+                        "glass-stroke": "rgba(255, 255, 255, 0.4)",
+                        "secondary-fixed-dim": "#c1c8ca",
+                        "tertiary-container": "#ff8e7e",
+                        "primary": "#904d00",
+                        "inverse-on-surface": "#f0f1f1",
+                        "outline": "#867366",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "surface": "#f9f9f9",
+                        "glass-fill": "rgba(255, 255, 255, 0.7)",
+                        "surface-container-highest": "#e2e2e2",
+                        "island-red": "#EF3124",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#930002"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "px-4": "16px",
+                        "section-gap": "120px",
+                        "margin-desktop": "48px",
+                        "gutter": "24px",
+                        "max-w-[1280px]": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Outfit", "sans-serif"],
+                        "body-lg": ["Outfit", "sans-serif"],
+                        "label-bold": ["Outfit", "sans-serif"],
+                        "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "button": ["Plus Jakarta Sans", "sans-serif"],
+                        "display-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-sm": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "button": ["16px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .ambient-shadow {
+            box-shadow: 0 10px 30px -10px rgba(45, 52, 54, 0.08);
+        }
+
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .accordion-toggle:checked~.accordion-content {
+            max-height: 500px;
+            opacity: 1;
+        }
+
+        .accordion-toggle:checked~.accordion-header .material-symbols-outlined {
+            transform: rotate(180deg);
+        }
+
+        /* Action 2D Preloader Styles */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .split-panel {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: #111111;
+            transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+            pointer-events: auto;
+        }
+
+        .top-panel {
+            top: 0;
+            transform-origin: top;
+        }
+
+        .bottom-panel {
+            bottom: 0;
+            transform-origin: bottom;
+        }
+
+        .state-peek .top-panel,
+        .state-peek .bottom-panel {
+            transform: scaleY(0.92);
+        }
+
+        .state-split .top-panel,
+        .state-split .bottom-panel {
+            transform: scaleY(0);
+        }
+
+        .scooter-action-wrapper {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            transform-origin: 30% 90%;
+            will-change: transform;
+            animation: action-ride 3.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        .loader-scooter {
+            font-size: 100px !important;
+            color: #f2994a;
+        }
+
+        .exhaust-smoke {
+            position: absolute;
+            bottom: 10px;
+            left: -10px;
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: smoke-blow 0.6s infinite;
+        }
+
+        .exhaust-smoke:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .exhaust-smoke:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes smoke-blow {
+            0% {
+                transform: scale(1) translateX(0);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(3) translateX(-40px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes action-ride {
+            0% {
+                transform: translate(-100vw, 0) rotate(0deg);
+            }
+
+            30% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            35% {
+                transform: translate(0, -15px) rotate(-25deg);
+            }
+
+            60% {
+                transform: translate(0, -15px) rotate(-25deg);
+            }
+
+            70% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(100vw, 0) rotate(0deg);
+            }
+        }
+
+        .hero-title-anim {
+            opacity: 0;
+            will-change: transform, opacity;
+            animation: heroFadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 2.3s forwards;
+        }
+
+        .hero-subtitle-anim {
+            opacity: 0;
+            will-change: transform, opacity;
+            animation: heroFadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 2.55s forwards;
+        }
+
+        .animate-pop-in {
+            opacity: 0;
+            will-change: transform, opacity;
+            animation: popIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 2.75s forwards;
+        }
+
+        @keyframes drive-path {
+            0% {
+                left: -10%;
+                transform: translateX(0);
+            }
+
+            100% {
+                left: 110%;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes heroFadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes infinite-scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) rotate(-12deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(-12deg);
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            20%,
+            60% {
+                transform: translateX(-5px);
+            }
+
+            40%,
+            80% {
+                transform: translateX(5px);
+            }
+        }
+
+        .animate-shake {
+            animation: shake 0.4s cubic-bezier(.36, .07, .19, .97) both;
+            color: #ef4444;
+        }
+
+        .animate-shake input {
+            color: #ef4444;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #hero-video-parallax {
+            transform: translateY(var(--parallax-y, 0px));
+            will-change: transform;
+        }
+
+        .parallax-wrapper {
+            transform: translateY(var(--parallax-y, 0px)) scale(1.15);
+            will-change: transform;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0%;
+            height: 2px;
+            background-color: #F2994A;
+            opacity: 0;
+            transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="split-panel top-panel"></div>
+        <div class="split-panel bottom-panel"></div>
+
+        <div class="scooter-action-wrapper">
+            <div class="exhaust-smoke"></div>
+            <div class="exhaust-smoke"></div>
+            <div class="exhaust-smoke"></div>
+            <span class="material-symbols-outlined loader-scooter">moped</span>
+        </div>
+    </div>
+
+    <!-- TopNavBar Shared Component -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 bg-glass-fill backdrop-blur-xl dark:bg-deep-slate/80 shadow-sm border-b border-glass-stroke transition-all duration-300 ease-in-out">
+        <div class="flex justify-between items-center px-4 md:px-8 h-20 max-w-[1280px] mx-auto">
+            <div class="font-headline-md text-headline-md font-bold text-deep-slate dark:text-surface-container-lowest">
+                CeylonRiders
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="nav-link active text-primary dark:text-warm-gold font-bold hover:text-primary/80 dark:hover:text-warm-gold/80 transition-colors font-body-md"
+                    href="#hero">Home</a>
+                <a class="nav-link text-deep-slate dark:text-surface-variant hover:text-primary dark:hover:text-warm-gold transition-colors font-body-md"
+                    href="#vehicles">Vehicles</a>
+                <a class="nav-link text-deep-slate dark:text-surface-variant hover:text-primary dark:hover:text-warm-gold transition-colors font-body-md"
+                    href="#features">Features</a>
+                <a class="nav-link text-deep-slate dark:text-surface-variant hover:text-primary dark:hover:text-warm-gold transition-colors font-body-md"
+                    href="#routes">Routes</a>
+                <a class="nav-link text-deep-slate dark:text-surface-variant hover:text-primary dark:hover:text-warm-gold transition-colors font-body-md"
+                    href="#reviews">Reviews</a>
+                <a class="nav-link text-deep-slate dark:text-surface-variant hover:text-primary dark:hover:text-warm-gold transition-colors font-body-md"
+                    href="#contact">Contact</a>
+            </div>
+            <button onclick="scrollToSearch()"
+                class="font-button text-button text-primary dark:text-warm-gold bg-transparent border-2 border-primary dark:border-warm-gold px-6 py-3 rounded-full hover:bg-primary hover:text-on-primary transition-all duration-300">
+                Find Your Ride
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-[90vh] flex items-center pt-20">
+        <div class="absolute inset-0 overflow-hidden bg-deep-slate z-0">
+            <video id="hero-video-parallax" autoplay loop muted playsinline
+                class="absolute inset-0 w-full h-full object-cover transform-gpu"
+                src="Hero Section Video/hero video.mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-r from-deep-slate/80 via-deep-slate/40 to-transparent"></div>
+        </div>
+        <div
+            class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-8 mt-16 md:mt-0">
+            <div class="md:col-span-8 lg:col-span-6 flex flex-col gap-6">
+                <h1
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-surface-container-lowest drop-shadow-lg hero-title-anim">
+                    Explore Sri Lanka on Two Wheels – Premium Bike &amp; Scooter Rentals
+                </h1>
+                <p
+                    class="font-body-lg text-body-lg text-surface-container-lowest/90 drop-shadow-md max-w-lg hero-subtitle-anim">
+                    Affordable rates, hassle-free booking, and full insurance coverage for your perfect island
+                    adventure.
+                </p>
+                <div class="flex flex-wrap gap-4 md:gap-6 items-center mt-4 hero-badges-anim">
+                    <div
+                        class="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full shadow-sm text-surface-container-lowest font-label-bold text-xs">
+                        <span class="material-symbols-outlined text-[#25D366] text-[18px]">verified_user</span>
+                        FULL INSURANCE: YES
+                    </div>
+                    <div
+                        class="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full shadow-sm text-surface-container-lowest font-label-bold text-xs">
+                        <span class="material-symbols-outlined text-warm-gold text-[18px]">sports_motorsports</span>
+                        HELMETS: 1 OR 2
+                    </div>
+                    <div
+                        class="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full shadow-sm text-surface-container-lowest font-label-bold text-xs">
+                        <span class="material-symbols-outlined text-warm-gold text-[18px]">medical_services</span>
+                        FIRST-AID KIT: YES
+                    </div>
+                    <div
+                        class="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full shadow-sm text-surface-container-lowest font-label-bold text-xs">
+                        <span class="material-symbols-outlined text-warm-gold text-[18px]">settings</span>
+                        TRANSMISSION: AUTO / MANUAL
+                    </div>
+                    <div
+                        class="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full shadow-sm text-surface-container-lowest font-label-bold text-xs">
+                        <span class="material-symbols-outlined text-warm-gold text-[18px]">support_agent</span>
+                        24/7 ROADSIDE ASSISTANCE: YES
+                    </div>
+                    <div
+                        class="flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full shadow-sm text-surface-container-lowest font-label-bold text-xs">
+                        <span class="material-symbols-outlined text-warm-gold text-[18px]">speed</span>
+                        MILEAGE: UNLIMITED
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="quick-search-bar"
+            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-[1000px] px-4 z-20">
+            <div
+                class="glass-panel rounded-xl shadow-2xl p-2 md:p-4 flex flex-col md:flex-row gap-4 items-center justify-between">
+                <div class="flex-1 w-full px-4 py-2 border-b md:border-b-0 md:border-r border-glass-stroke">
+                    <label class="block font-label-bold text-label-bold text-deep-slate mb-1">Pick-up Location</label>
+                    <select id="search-location"
+                        class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md">
+                        <option>Colombo Airport</option>
+                        <option>Negombo</option>
+                        <option>Kandy</option>
+                        <option>Galle</option>
+                        <option>Ella</option>
+                        <option>Mirissa</option>
+                    </select>
+                </div>
+                <div class="flex-1 w-full px-4 py-2 border-b md:border-b-0 md:border-r border-glass-stroke">
+                    <label class="block font-label-bold text-label-bold text-deep-slate mb-1">Pick-up &amp;
+                        Drop-off</label>
+                    <div class="flex items-center gap-2 border-b border-transparent transition-colors duration-300"
+                        id="search-date-container">
+                        <input id="search-pickup"
+                            class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md placeholder-deep-slate/50"
+                            type="date" />
+                        <span class="text-deep-slate/50">-</span>
+                        <input id="search-dropoff"
+                            class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md placeholder-deep-slate/50"
+                            type="date" />
+                    </div>
+                </div>
+                <div class="flex-1 w-full px-4 py-2">
+                    <label class="block font-label-bold text-label-bold text-deep-slate mb-1">Vehicle Type</label>
+                    <select id="search-type"
+                        class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md">
+                        <option value="all">All Types</option>
+                        <option value="scooters">Scooters</option>
+                        <option value="trail">Trail/Adventure</option>
+                        <option value="cruisers">Cruisers</option>
+                    </select>
+                </div>
+                <div class="w-full md:w-auto px-2">
+                    <button id="search-btn" onclick="executeSearch()"
+                        class="w-full md:w-auto bg-warm-gold text-on-primary font-button text-button px-8 py-4 rounded-lg hover:bg-warm-gold/90 transition-colors flex items-center justify-center gap-2 whitespace-nowrap shadow-lg">
+                        <span class="material-symbols-outlined">search</span>
+                        Find Your Ride
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-32 md:h-24"></div>
+
+    <!-- Process Section -->
+    <section class="py-16 md:py-24 px-4 md:px-8 max-w-[1280px] mx-auto relative overflow-hidden" id="process">
+        <div class="text-center mb-16 relative z-10">
+            <span
+                class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-warm-gold/20 text-warm-gold mb-4">
+                <span class="material-symbols-outlined">electric_moped</span>
+            </span>
+            <h2 id="process-heading"
+                class="font-headline-md text-headline-md font-black tracking-tight text-deep-slate">It’s Really Easier
+                To Rent</h2>
+            <p class="font-body-md text-body-md text-secondary mt-2">We offer bikes and electric scooters for renting at
+                low prices</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch relative z-10">
+            <div class="hidden md:block absolute top-[40%] left-0 w-full h-px -z-10">
+                <div class="absolute inset-0 border-t-2 border-dashed border-warm-gold/30"></div>
+                <div class="absolute top-1/2 -translate-y-1/2 text-warm-gold drop-shadow-[0_0_8px_rgba(242,153,74,0.8)]"
+                    style="animation: drive-path 6s infinite linear;">
+                    <span class="material-symbols-outlined text-3xl">moped</span>
+                </div>
+            </div>
+            <div
+                class="bg-white/80 dark:bg-deep-slate/80 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-8 hover:-translate-y-3 transition-all duration-300 text-center flex flex-col justify-between items-center h-full">
+                <div
+                    class="text-5xl font-black bg-gradient-to-r from-warm-gold to-orange-500 bg-clip-text text-transparent mb-2 select-none">
+                    1</div>
+                <div
+                    class="w-16 h-16 rounded-full bg-warm-gold/10 flex items-center justify-center text-warm-gold shadow-md mx-auto mb-4">
+                    <span class="material-symbols-outlined text-3xl">moped</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm font-black tracking-tight text-deep-slate mb-2">Choose Bike
+                    or Scooter</h3>
+                <span
+                    class="text-[11px] font-bold uppercase tracking-wider text-warm-gold bg-warm-gold/10 px-3 py-1 rounded-full">Wide
+                    Range Available</span>
+            </div>
+            <div
+                class="bg-white/80 dark:bg-deep-slate/80 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-8 hover:-translate-y-3 transition-all duration-300 text-center flex flex-col justify-between items-center h-full">
+                <div
+                    class="text-5xl font-black bg-gradient-to-r from-warm-gold to-orange-500 bg-clip-text text-transparent mb-2 select-none">
+                    2</div>
+                <div
+                    class="w-16 h-16 rounded-full bg-warm-gold/10 flex items-center justify-center text-warm-gold shadow-md mx-auto mb-4">
+                    <span class="material-symbols-outlined text-3xl">calendar_month</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm font-black tracking-tight text-deep-slate mb-2">Pick
+                    Location &amp; Date</h3>
+                <span
+                    class="text-[11px] font-bold uppercase tracking-wider text-warm-gold bg-warm-gold/10 px-3 py-1 rounded-full">Airport
+                    &amp; Hotel Delivery</span>
+            </div>
+            <div
+                class="bg-white/80 dark:bg-deep-slate/80 backdrop-blur-xl border border-white/40 shadow-xl rounded-2xl p-8 hover:-translate-y-3 transition-all duration-300 text-center flex flex-col justify-between items-center h-full">
+                <div
+                    class="text-5xl font-black bg-gradient-to-r from-warm-gold to-orange-500 bg-clip-text text-transparent mb-2 select-none">
+                    3</div>
+                <div
+                    class="w-16 h-16 rounded-full bg-warm-gold/10 flex items-center justify-center text-warm-gold shadow-md mx-auto mb-4">
+                    <span class="material-symbols-outlined text-3xl">route</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm font-black tracking-tight text-deep-slate mb-2">Ride Freely
+                    &amp; Enjoy</h3>
+                <span
+                    class="text-[11px] font-bold uppercase tracking-wider text-warm-gold bg-warm-gold/10 px-3 py-1 rounded-full">Unlimited
+                    Mileage Included</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicles Section -->
+    <section class="py-16 md:py-24 px-4 md:px-8 bg-surface-container-low" id="vehicles">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-deep-slate mb-2">Choose Your Vehicle</h2>
+                    <p class="font-body-md text-body-md text-secondary">Select the perfect motorbike or scooter for your
+                        island journey.</p>
+                </div>
+                <div class="flex gap-4 mt-6 md:mt-0 overflow-x-auto pb-2 no-scrollbar" id="vehicles-filters">
+                    <button data-filter="all" onclick="filterVehicles('all')"
+                        class="px-6 py-2 rounded-full bg-deep-slate text-surface-container-lowest font-label-bold text-label-bold whitespace-nowrap filter-btn transition-colors">All</button>
+                    <button data-filter="scooters" onclick="filterVehicles('scooters')"
+                        class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-variant text-deep-slate font-label-bold text-label-bold whitespace-nowrap filter-btn transition-colors">Scooters</button>
+                    <button data-filter="trail" onclick="filterVehicles('trail')"
+                        class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-variant text-deep-slate font-label-bold text-label-bold whitespace-nowrap filter-btn transition-colors">Trail/Dirt</button>
+                    <button data-filter="cruisers" onclick="filterVehicles('cruisers')"
+                        class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-variant text-deep-slate font-label-bold text-label-bold whitespace-nowrap filter-btn transition-colors">Cruisers</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bike Card 1 -->
+                <div data-category="scooters"
+                    class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
+                    <div class="relative h-64 overflow-hidden bg-surface-dim">
+                        <div class="parallax-wrapper">
+                            <img alt="Honda Dio"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_9ro3UT68u1hPEVUg4zgErbpxsgcS7SxnVEqixiZm2hGE7XDlkkHb3Ms5wBfuZRFx51QPLvXG8mbdC5aBqC8AvGFdPG1R_46Qvm2EtOcXlXzsC39QYGNt8Ry6xK5JZ1IvP-TsyK7HcLXKWNLRv4VcxEy-_KySELx25-hLgKrgK-oA5onN4cqRXgRqzuRVSY0k64_JL1JGt0lQZofT75GFr8Ts3xHNVFh5D-VLoz56pNSpdjkyruldZA" />
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-surface-container-lowest px-3 py-1 rounded-full text-warm-gold font-label-bold text-sm shadow-md">
+                            Automatic</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline-sm text-headline-sm text-deep-slate mb-1">Honda Dio 110cc</h3>
+                        <p class="font-body-md text-body-md text-secondary mb-4">Perfect for city rides and short
+                            coastal trips.</p>
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <span class="text-2xl font-bold text-deep-slate">$5</span>
+                                <span class="text-secondary font-body-md text-sm">/day</span>
+                                <div class="text-xs text-secondary mt-1">(~1,600 LKR)</div>
+                            </div>
+                        </div>
+                        <button onclick="openModal(this)"
+                            class="w-full bg-deep-slate text-surface-container-lowest font-button text-button py-3 rounded-lg hover:bg-warm-gold transition-colors">Select
+                            &amp; Rent</button>
+                    </div>
+                </div>
+                <!-- Bike Card 2 -->
+                <div data-category="trail"
+                    class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
+                    <div class="relative h-64 overflow-hidden bg-surface-dim">
+                        <div class="parallax-wrapper">
+                            <img alt="Honda CRF"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhhEWRsx4UZni5uYp4Kb3kj72w6F7Ol6ah2YE2TbeO96RIXsZQoD-ylqJLhc-xCLRDNkKJAXnu9KqjO-YuoCTPa0qc5avADjpu9git5xm2NGVUA4mEQAPLwtTob6ekGudZXyCrnrRyKJJT_n2GqPpmMQVMVM8dpD3zwJHwnO_kLVo0ft7yg2XM1ZysihIHszO8nIQWzZaea3HUlf0SzEfMbQpmPlyGbeR8-7yuaNCxiRVcWwuR-YpAbw" />
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-surface-container-lowest px-3 py-1 rounded-full text-warm-gold font-label-bold text-sm shadow-md">
+                            Manual</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline-sm text-headline-sm text-deep-slate mb-1">Honda CRF 250L</h3>
+                        <p class="font-body-md text-body-md text-secondary mb-4">Conquer hill country trails with ease.
+                        </p>
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <span class="text-2xl font-bold text-deep-slate">$18</span>
+                                <span class="text-secondary font-body-md text-sm">/day</span>
+                                <div class="text-xs text-secondary mt-1">(~5,700 LKR)</div>
+                            </div>
+                        </div>
+                        <button onclick="openModal(this)"
+                            class="w-full bg-deep-slate text-surface-container-lowest font-button text-button py-3 rounded-lg hover:bg-warm-gold transition-colors">Select
+                            &amp; Rent</button>
+                    </div>
+                </div>
+                <!-- Bike Card 3 -->
+                <div data-category="cruisers"
+                    class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
+                    <div class="relative h-64 overflow-hidden bg-surface-dim">
+                        <div class="parallax-wrapper">
+                            <img alt="Royal Enfield"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCpGh-KHGyFaLEws3BsoK33qXj7lU2-LvNKv5Bh03Lu6dTNd_QBeLjYRv2cDQbwJukRqUC-JiVacFmRc3vgiweOGyX1V3TbXEZH-Xt5NkkVF0Tp2O-fdHqFs3PCCODUaqSYU45S52NhQE0DuIpFPDEwjq1tK01GoSdjt_yypP4wDN7qfRfEfRf9-J1blYAshamLmwIp21ExfHm1seRE3i-Z0_z_gDqN0ykKKMrOTdNHgiSaVXe8K3RDw" />
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-surface-container-lowest px-3 py-1 rounded-full text-warm-gold font-label-bold text-sm shadow-md">
+                            Manual</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline-sm text-headline-sm text-deep-slate mb-1">Royal Enfield 350</h3>
+                        <p class="font-body-md text-body-md text-secondary mb-4">Classic cruising on the long highways.
+                        </p>
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <span class="text-2xl font-bold text-deep-slate">$22</span>
+                                <span class="text-secondary font-body-md text-sm">/day</span>
+                                <div class="text-xs text-secondary mt-1">(~7,000 LKR)</div>
+                            </div>
+                        </div>
+                        <button onclick="openModal(this)"
+                            class="w-full bg-deep-slate text-surface-container-lowest font-button text-button py-3 rounded-lg hover:bg-warm-gold transition-colors">Select
+                            &amp; Rent</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (Sticky Section) -->
+    <section class="sticky top-0 z-10 py-16 md:py-24 px-4 md:px-8 max-w-[1280px] mx-auto w-full bg-background"
+        id="features">
+        <div class="text-center mb-16">
+            <h2 class="font-headline-md text-headline-md text-deep-slate mb-2">Why Ride With Us</h2>
+            <p class="font-body-md text-body-md text-secondary">Premium service for an unforgettable journey</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
+                <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">local_shipping</span>
+                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Free Delivery</h4>
+                <p class="font-body-md text-secondary text-sm">Airport or hotel delivery across major coastal towns.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
+                <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">sports_motorsports</span>
+                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Unlimited Mileage</h4>
+                <p class="font-body-md text-secondary text-sm">Explore without limits. Includes 2 high-quality helmets.
+                </p>
+            </div>
+            <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
+                <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">verified_user</span>
+                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Full Insurance</h4>
+                <p class="font-body-md text-secondary text-sm">Comprehensive coverage for peace of mind on the road.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
+                <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">support_agent</span>
+                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">24/7 Support</h4>
+                <p class="font-body-md text-secondary text-sm">Round-the-clock roadside assistance anywhere in Sri
+                    Lanka.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Routes (Overlay Section) -->
+    <section class="relative z-30 py-20 md:py-32 px-4 md:px-8 bg-deep-slate text-surface-container-lowest" id="routes">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-md text-headline-md mb-2">Popular Riding Routes</h2>
+                <p class="font-body-md text-body-md text-surface-variant">Discover the beauty of Sri Lanka</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Route 1 -->
+                <div class="group relative rounded-2xl overflow-hidden h-96 cursor-pointer">
+                    <div class="parallax-wrapper">
+                        <img alt="South Coast"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_xhUv-YFkUtTpxe-4CGt6DsnEsFW580FLRX4EqEQuiGLAftvzRX8Pmnx1fGGWF2mtAk0J9MSaMvYqGBiLG5tKSBvGAfntRp7fp_YH3cKND8IcoIrm01Zvn79GRk3HUP7NUcLSXmsLnEixfrog26C1KuBEW_xRVCLg9cNTgHuLa-n7BXr-bhJUpoqFz-xuH6xgAxx2Dmgjq7IN3Pm3c3RRUlAW1m8B29_uTyxV-dnwRqebDT_mQEpCoQ" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-deep-slate/90 via-deep-slate/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span
+                            class="inline-block px-3 py-1 bg-warm-gold text-on-primary text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Coastal
+                            Cruiser</span>
+                        <h3 class="font-headline-sm text-2xl font-bold mb-2">South Coast Highway</h3>
+                        <p class="font-body-md text-surface-container-low mb-4 line-clamp-2">Galle to Mirissa. Smooth
+                            coastal roads, palm-fringed beaches, and sunset views.</p>
+                        <div
+                            class="flex items-center text-warm-gold font-label-bold group-hover:translate-x-2 transition-transform">
+                            View Route Details <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Route 2 -->
+                <div class="group relative rounded-2xl overflow-hidden h-96 cursor-pointer">
+                    <div class="parallax-wrapper">
+                        <img alt="Hill Country"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPykLGVIbcMon5bzgAdKvHDRp0MlVcbA1IFu9E7sXRZZSRZ7wKYDvaLXoQF0RyQoaG5R4FIDKvLJclWsYsjkM7uhBojvggzwf7P1UAxcoaerc_UABfvmNIiPRk0CqGpzG76QlfrE1KNmG93f4Sa6SGs1tHp4I0nYc6bxnFXrDMsg4p_odFLz-0tr2pFACZaoKrcs5a6SAtV7aFlJKxIOjuyHeukpW4gWgyXJjdtryVRqiShPy0w-OKJg" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-deep-slate/90 via-deep-slate/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span
+                            class="inline-block px-3 py-1 bg-primary text-on-primary text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Adventure
+                            Trail</span>
+                        <h3 class="font-headline-sm text-2xl font-bold mb-2">Kandy to Ella Scenic Ride</h3>
+                        <p class="font-body-md text-surface-container-low mb-4 line-clamp-2">Winding mountain roads
+                            through lush tea plantations and misty valleys.</p>
+                        <div
+                            class="flex items-center text-warm-gold font-label-bold group-hover:translate-x-2 transition-transform">
+                            View Route Details <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Trust -->
+    <section class="py-16 md:py-24 px-4 md:px-8 bg-surface-container-lowest relative overflow-hidden z-30" id="reviews">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-headline-md text-headline-md text-deep-slate mb-2">Trusted by Travelers</h2>
+                <div class="flex justify-center items-center gap-1 text-warm-gold mb-2">
+                    <span class="material-symbols-outlined fill-current">star</span>
+                    <span class="material-symbols-outlined fill-current">star</span>
+                    <span class="material-symbols-outlined fill-current">star</span>
+                    <span class="material-symbols-outlined fill-current">star</span>
+                    <span class="material-symbols-outlined fill-current">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-secondary">4.9/5 Average Rating from 500+ Reviews</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Review 1 -->
+                <div class="bg-surface-container-low p-6 rounded-xl relative">
+                    <div class="text-warm-gold opacity-20 absolute top-4 right-4">
+                        <span class="material-symbols-outlined text-6xl">format_quote</span>
+                    </div>
+                    <p class="font-body-md text-deep-slate italic mb-6 relative z-10">"Incredible service! The Honda CRF
+                        was in perfect condition. They delivered it to our hotel in Negombo right on time. Highly
+                        recommend for exploring the island."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+                            <img alt="Sarah M." class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdncGmemtXtEsoqPN-t9I91eSezKRJy_2kf8NpFNmBoTEc3aBTYLH50Yjd2hkoz05SAtQONjfG0Ie9_mqlsW5_fnd_O7uuwrsyTK7SPfj_-uxNO4MjkG8MsWAYYcyoylstpGxQFsY6ZTOQOely_-b2Xis7cNkQkhiuakWuesu0HScJYh-PMU_C6F7JrXNE4s5xOJNpWA-s-g34wX-at8N_15aAfGE8qrNLxLX2ZCBcQ80bdEdZ80RVkQ" />
+                        </div>
+                        <div>
+                            <div class="font-label-bold text-deep-slate">Sarah M.</div>
+                            <div class="text-xs text-secondary">United Kingdom</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-surface-container-low p-6 rounded-xl relative">
+                    <div class="text-warm-gold opacity-20 absolute top-4 right-4">
+                        <span class="material-symbols-outlined text-6xl">format_quote</span>
+                    </div>
+                    <p class="font-body-md text-deep-slate italic mb-6 relative z-10">"Rented a scooter for 2 weeks down
+                        the south coast. Zero issues, great communication via WhatsApp, and super easy drop-off at the
+                        end."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+                            <img alt="Mark D." class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkFfuhow_9QpexHuFarr8pRfnThF2tlbskPbTyOu7g8H4QRRCNB27sjcCqOG_lzLajxYNGVp7QuknGFeYFsQdpZMRVroe4gqqdb7q6IYkwFohgBSh48CcdRlwbexTHvPliHlAT3b-CuQcqrCLW4cvfrDz5epNjqoHIBaUJSwjlF8ezbMf9ITsSQMRApAWZAAqP08jQf-bCkZ_6g3eJtF1s2AGCGYIR6oNdIcRD2CasKAepFrOVQ1HyGg" />
+                        </div>
+                        <div>
+                            <div class="font-label-bold text-deep-slate">Mark D.</div>
+                            <div class="text-xs text-secondary">Australia</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-surface-container-low p-6 rounded-xl relative">
+                    <div class="text-warm-gold opacity-20 absolute top-4 right-4">
+                        <span class="material-symbols-outlined text-6xl">format_quote</span>
+                    </div>
+                    <p class="font-body-md text-deep-slate italic mb-6 relative z-10">"No hidden fees, no credit card
+                        deposit nonsense. Just honest, friendly local guys with great bikes. Made our Sri Lanka trip
+                        unforgettable."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+                            <img alt="Johan V." class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiZzcdAFfU3anUd1JUhh52Uk-MG4GrL-nz6F36bszMINSMuV_IF5-Vw54fMFHGOZaqTQnzK7sH6B1iDSHIpeErt9QzWilsjLbFL2guD8-oLn-96Aiv0A0EPwkbO-J2N3hXSoC_QSBeqEGOIAkUC3JAV-yncrGF_siUlILiM2HaEj0hcqlLeMkUH8UBx3sVIrir2RSESOG_RvRRj13lhEZvUZw1YVjA80hc6Pg961CjkhV70L4yyVM7aA" />
+                        </div>
+                        <div>
+                            <div class="font-label-bold text-deep-slate">Johan V.</div>
+                            <div class="text-xs text-secondary">Netherlands</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 border-t border-surface-variant pt-12">
+                <div
+                    class="flex items-center gap-2 text-deep-slate font-label-bold bg-surface-container px-4 py-2 rounded-full">
+                    <span class="material-symbols-outlined text-warm-gold">verified</span> Licensed Rental Company
+                </div>
+                <div
+                    class="flex items-center gap-2 text-deep-slate font-label-bold bg-surface-container px-4 py-2 rounded-full">
+                    <span class="material-symbols-outlined text-warm-gold">credit_card_off</span> No Credit Card Deposit
+                </div>
+                <div
+                    class="flex items-center gap-2 text-deep-slate font-label-bold bg-surface-container px-4 py-2 rounded-full">
+                    <span class="material-symbols-outlined text-warm-gold">bolt</span> Instant Confirmation
+                </div>
+            </div>
+        </div>
+
+        <!-- Infinite Scrolling Text Bar -->
+        <div class="absolute bottom-0 left-0 w-full bg-deep-slate border-y border-white/10 shadow-lg">
+            <div class="flex whitespace-nowrap py-3 w-max" style="animation: infinite-scroll 35s linear infinite;">
+                <span
+                    class="text-surface-container-lowest tracking-wider font-bold uppercase text-sm md:text-base font-['Plus_Jakarta_Sans'] pr-8">
+                    ... UNLIMITED MILEAGE &amp; FREE HELMETS | 🛡️ COMPREHENSIVE INSURANCE INCLUDED | 🛟 24/7 ROADSIDE
+                    ASSISTANCE | NO HIDDEN FEES | INSTANT WA BOOKING | EXPLORE SRI LANKA FREELY ...
+                </span>
+                <span
+                    class="text-surface-container-lowest tracking-wider font-bold uppercase text-sm md:text-base font-['Plus_Jakarta_Sans'] pr-8">
+                    ... UNLIMITED MILEAGE &amp; FREE HELMETS | 🛡️ COMPREHENSIVE INSURANCE INCLUDED | 🛟 24/7 ROADSIDE
+                    ASSISTANCE | NO HIDDEN FEES | INSTANT WA BOOKING | EXPLORE SRI LANKA FREELY ...
+                </span>
+                <span
+                    class="text-surface-container-lowest tracking-wider font-bold uppercase text-sm md:text-base font-['Plus_Jakarta_Sans'] pr-8">
+                    ... UNLIMITED MILEAGE &amp; FREE HELMETS | 🛡️ COMPREHENSIVE INSURANCE INCLUDED | 🛟 24/7 ROADSIDE
+                    ASSISTANCE | NO HIDDEN FEES | INSTANT WA BOOKING | EXPLORE SRI LANKA FREELY ...
+                </span>
+                <span
+                    class="text-surface-container-lowest tracking-wider font-bold uppercase text-sm md:text-base font-['Plus_Jakarta_Sans'] pr-8">
+                    ... UNLIMITED MILEAGE &amp; FREE HELMETS | 🛡️ COMPREHENSIVE INSURANCE INCLUDED | 🛟 24/7 ROADSIDE
+                    ASSISTANCE | NO HIDDEN FEES | INSTANT WA BOOKING | EXPLORE SRI LANKA FREELY ...
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 px-4 md:px-8 bg-background relative z-30">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-headline-md text-headline-md text-deep-slate mb-2">Frequently Asked Questions</h2>
+                <p class="font-body-md text-body-md text-secondary">Everything you need to know before you ride</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="bg-surface-container-lowest border border-surface-variant rounded-xl overflow-hidden">
+                    <input class="hidden accordion-toggle" id="faq1" type="checkbox" />
+                    <label
+                        class="flex justify-between items-center p-6 cursor-pointer accordion-header hover:bg-surface-container-low transition-colors"
+                        for="faq1">
+                        <h4 class="font-headline-sm text-lg font-bold text-deep-slate">Do I need an International
+                            Driving Permit (IDP)?</h4>
+                        <span
+                            class="material-symbols-outlined text-warm-gold transition-transform duration-300">expand_more</span>
+                    </label>
+                    <div class="accordion-content bg-surface-container-lowest">
+                        <div class="p-6 pt-0 text-body-md text-secondary border-t border-surface-variant mt-2">
+                            Yes, to legally ride in Sri Lanka you need either an IDP endorsed for motorcycles, or a Sri
+                            Lankan temporary riding permit. We can assist you in obtaining the local permit upon arrival
+                            for a small fee if you don't have an IDP.
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-lowest border border-surface-variant rounded-xl overflow-hidden">
+                    <input class="hidden accordion-toggle" id="faq2" type="checkbox" />
+                    <label
+                        class="flex justify-between items-center p-6 cursor-pointer accordion-header hover:bg-surface-container-low transition-colors"
+                        for="faq2">
+                        <h4 class="font-headline-sm text-lg font-bold text-deep-slate">What does the insurance cover?
+                        </h4>
+                        <span
+                            class="material-symbols-outlined text-warm-gold transition-transform duration-300">expand_more</span>
+                    </label>
+                    <div class="accordion-content bg-surface-container-lowest">
+                        <div class="p-6 pt-0 text-body-md text-secondary border-t border-surface-variant mt-2">
+                            All our vehicles come with comprehensive local insurance covering third-party liability and
+                            damage to the rental vehicle. Please note that personal medical/travel insurance is your
+                            responsibility and highly recommended.
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-lowest border border-surface-variant rounded-xl overflow-hidden">
+                    <input class="hidden accordion-toggle" id="faq3" type="checkbox" />
+                    <label
+                        class="flex justify-between items-center p-6 cursor-pointer accordion-header hover:bg-surface-container-low transition-colors"
+                        for="faq3">
+                        <h4 class="font-headline-sm text-lg font-bold text-deep-slate">What is the deposit policy?</h4>
+                        <span
+                            class="material-symbols-outlined text-warm-gold transition-transform duration-300">expand_more</span>
+                    </label>
+                    <div class="accordion-content bg-surface-container-lowest">
+                        <div class="p-6 pt-0 text-body-md text-secondary border-t border-surface-variant mt-2">
+                            We do not require a credit card block. We take a small cash deposit (usually $50-$100
+                            depending on the bike model) which is fully refunded upon safe return of the vehicle. You
+                            can pay the deposit in USD, EUR, or LKR.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Contact Section -->
+    <section class="py-16 md:py-24 px-4 md:px-8 bg-surface-container-low relative z-30" id="contact">
+        <div class="max-w-[1280px] mx-auto bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="font-headline-md text-headline-md text-deep-slate mb-6">Get In Touch</h2>
+                    <p class="font-body-md text-body-md text-secondary mb-8">Ready to start your adventure? Contact us
+                        directly for custom bookings, long-term rentals, or general inquiries.</p>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-[#25D366]/10 rounded-full flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[#25D366]">chat</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-bold text-deep-slate mb-1">WhatsApp (Fastest)</h4>
+                                <a class="text-body-md font-bold text-primary hover:underline" href="#">+94 77 123
+                                    4567</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-warm-gold/10 rounded-full flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-warm-gold">call</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-bold text-deep-slate mb-1">Phone</h4>
+                                <a class="text-body-md font-bold text-primary hover:underline"
+                                    href="tel:+94771234567">+94 77 123 4567</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-warm-gold/10 rounded-full flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-warm-gold">mail</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-bold text-deep-slate mb-1">Email</h4>
+                                <a class="text-body-md font-bold text-primary hover:underline"
+                                    href="mailto:hello@ceylonriders.com">hello@ceylonriders.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-warm-gold/10 rounded-full flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-warm-gold">location_on</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-bold text-deep-slate mb-1">Main Office</h4>
+                                <p class="text-body-md text-secondary">123 Beach Road, Negombo, Sri Lanka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-dim relative h-64 md:h-auto">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center flex-col bg-deep-slate/5 text-deep-slate">
+                        <span class="material-symbols-outlined text-6xl mb-4 text-warm-gold">map</span>
+                        <span class="font-label-bold">Interactive Map View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Shared Component -->
+    <footer class="bg-deep-slate dark:bg-on-surface w-full py-16 md:py-24 relative z-30">
+        <div class="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col gap-8">
+            <div class="flex gap-8 items-start justify-between flex-wrap">
+                <div class="font-headline-sm text-headline-sm text-surface-container-lowest mb-6 md:mb-0">
+                    CeylonRiders
+                </div>
+                <div class="flex gap-8 flex-wrap">
+                    <a class="font-body-md text-body-md text-warm-gold" href="#vehicles">Vehicles</a>
+                    <a class="font-body-md text-body-md text-surface-variant hover:text-surface-container-lowest transition-colors"
+                        href="#routes">Routes</a>
+                    <a class="font-body-md text-body-md text-surface-variant hover:text-surface-container-lowest transition-colors"
+                        href="#">Terms of Service</a>
+                    <a class="font-body-md text-body-md text-surface-variant hover:text-surface-container-lowest transition-colors"
+                        href="#">Privacy Policy</a>
+                    <a class="font-body-md text-body-md text-surface-variant hover:text-surface-container-lowest transition-colors"
+                        href="#">Emergency Support</a>
+                    <a class="font-body-md text-body-md text-surface-variant hover:text-surface-container-lowest transition-colors"
+                        href="#">WhatsApp Support</a>
+                </div>
+            </div>
+            <div class="font-body-md text-body-md text-surface-variant mt-8 border-t border-glass-stroke pt-8">
+                © 2024 CeylonRiders Premium Rentals Sri Lanka. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button onclick="toggleChat()"
+        class="fixed bottom-2 right-6 md:bottom-3 md:right-8 z-[60] w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
+        <span class="material-symbols-outlined text-3xl leading-none">chat</span>
+    </button>
+
+    <!-- Chatbot Widget -->
+    <div id="chat-widget"
+        class="fixed bottom-16 right-6 md:bottom-18 md:right-8 z-[60] w-80 md:w-96 h-[480px] bg-surface-container-lowest/90 backdrop-blur-xl border border-glass-stroke rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300 transform scale-0 origin-bottom-right opacity-0 pointer-events-none">
+        <div
+            class="bg-deep-slate text-surface-container-lowest p-4 flex justify-between items-center relative overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-warm-gold to-transparent">
+            </div>
+            <div class="relative z-10 flex flex-col">
+                <h3 class="font-headline-sm text-lg flex items-center gap-2">
+                    <span class="material-symbols-outlined text-warm-gold">support_agent</span>
+                    CeylonRiders
+                </h3>
+                <div class="flex items-center gap-1.5 mt-1">
+                    <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+                    <span class="text-xs text-surface-variant font-label-bold">Online | Instant Support</span>
+                </div>
+            </div>
+            <button onclick="toggleChat()"
+                class="relative z-10 text-surface-variant hover:text-white transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div id="chat-messages"
+            class="flex-1 overflow-y-auto p-4 flex flex-col gap-4 bg-surface-container-lowest/50 no-scrollbar scroll-smooth">
+            <div class="flex gap-2 items-end max-w-[85%]">
+                <div class="w-8 h-8 rounded-full bg-deep-slate flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-warm-gold text-sm">support_agent</span>
+                </div>
+                <div
+                    class="bg-surface-container-low text-deep-slate text-sm p-3 rounded-2xl rounded-bl-none shadow-sm border border-glass-stroke font-body-md leading-relaxed">
+                    Hi there! 👋 Welcome to CeylonRiders. How can we help you explore Sri Lanka today?
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-2" id="chat-quick-chips">
+                <button onclick="sendQuickReply('Bike Rates & Models')"
+                    class="text-xs bg-warm-gold/10 text-warm-gold border border-warm-gold/30 px-3 py-1.5 rounded-full hover:bg-warm-gold hover:text-white transition-colors font-label-bold">Bike
+                    Rates & Models</button>
+                <button onclick="sendQuickReply('Pickup Locations')"
+                    class="text-xs bg-warm-gold/10 text-warm-gold border border-warm-gold/30 px-3 py-1.5 rounded-full hover:bg-warm-gold hover:text-white transition-colors font-label-bold">Pickup
+                    Locations</button>
+                <button onclick="sendQuickReply('License / IDP Rules')"
+                    class="text-xs bg-warm-gold/10 text-warm-gold border border-warm-gold/30 px-3 py-1.5 rounded-full hover:bg-warm-gold hover:text-white transition-colors font-label-bold">License
+                    / IDP Rules</button>
+                <button onclick="sendQuickReply('Talk to Human (WhatsApp)')"
+                    class="text-xs bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/30 px-3 py-1.5 rounded-full hover:bg-[#25D366] hover:text-white transition-colors font-label-bold">Talk
+                    to Human</button>
+            </div>
+        </div>
+
+        <div class="p-3 bg-surface-container-lowest border-t border-glass-stroke">
+            <form onsubmit="handleChatSubmit(event)" class="relative flex items-center">
+                <input type="text" id="chat-input"
+                    class="w-full bg-surface-container-low border border-glass-stroke rounded-full pl-4 pr-12 py-2.5 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-sm text-deep-slate font-body-md placeholder:text-secondary"
+                    placeholder="Type your message..." />
+                <button type="submit"
+                    class="absolute right-1 w-8 h-8 flex items-center justify-center bg-warm-gold text-white rounded-full hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-sm">send</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- IDP Promo Modal -->
+    <div id="idp-modal"
+        class="fixed inset-0 z-[110] flex items-center justify-center hidden opacity-0 transition-opacity duration-500">
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="closeIdpModal()"></div>
+        <div class="relative w-[90%] max-w-xl bg-transparent rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-500 group"
+            id="idp-modal-card">
+            <button onclick="closeIdpModal()"
+                class="absolute top-[12px] right-[12px] z-30 text-white/80 hover:text-white bg-black/30 hover:bg-black/50 transition-colors rounded-full p-1.5 backdrop-blur-md flex items-center justify-center">
+                <span class="material-symbols-outlined text-xl leading-none">close</span>
+            </button>
+            <a href="https://idaoffice.org/apply-now/?agentid=1469" target="_blank" onclick="closeIdpModal()"
+                class="block relative w-full h-full cursor-pointer">
+                <img src="Licen/scooter_poster.png" alt="International Driving Permit"
+                    class="w-full h-auto object-cover object-center block" />
+            </a>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal"
+        class="fixed inset-0 z-[100] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-md" onclick="closeModal()"></div>
+        <div class="relative bg-surface-container-lowest w-[90%] max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-6 md:p-8 transform scale-95 transition-transform duration-300"
+            id="modal-card">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-secondary hover:text-deep-slate transition-colors">
+                <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+            <div class="mb-6">
+                <h2 class="font-headline-sm text-2xl text-deep-slate mb-1">YOUR BOOKING</h2>
+                <p class="font-body-md text-xs font-bold text-warm-gold tracking-widest uppercase">PLEASE, CHECK YOUR
+                    BOOKING</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 border-b border-glass-stroke pb-8">
+                <div
+                    class="bg-surface-container-low rounded-xl p-6 border border-glass-stroke relative overflow-hidden group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span id="modal-bike-category"
+                                class="inline-block px-3 py-1 bg-warm-gold/20 text-warm-gold text-xs font-bold rounded-full mb-2 uppercase tracking-wider">Vehicle</span>
+                            <h3 id="modal-bike-title" class="font-headline-sm text-xl text-deep-slate">General Booking
+                            </h3>
+                        </div>
+                        <div class="text-right">
+                            <span id="modal-bike-price" class="text-2xl font-bold text-deep-slate">$0</span>
+                            <span class="text-secondary font-body-md text-sm">/day</span>
+                        </div>
+                    </div>
+
+                    <div class="relative h-48 w-full mb-6 flex items-center justify-center">
+                        <span
+                            class="material-symbols-outlined absolute text-9xl text-deep-slate/5 -z-10">two_wheeler</span>
+                        <img id="modal-bike-image" src="" class="w-full h-full object-contain drop-shadow-2xl hidden"
+                            alt="Vehicle Image" />
+                    </div>
+
+                    <div
+                        class="bg-surface-container-lowest rounded-lg p-3 mb-6 flex justify-between items-center text-sm font-label-bold">
+                        <div class="flex flex-col w-[45%]">
+                            <label class="text-secondary text-xs mb-1">Pick-up</label>
+                            <input type="date" id="modal-date-input-pickup" onchange="syncModalDates()"
+                                class="w-full bg-transparent border-none text-deep-slate p-0 focus:ring-0 text-sm font-label-bold" />
+                        </div>
+                        <span class="material-symbols-outlined text-warm-gold">arrow_forward</span>
+                        <div class="flex flex-col w-[45%] items-end">
+                            <label class="text-secondary text-xs mb-1 w-full text-right">Drop-off</label>
+                            <input type="date" id="modal-date-input-dropoff" onchange="syncModalDates()"
+                                class="w-full bg-transparent border-none text-deep-slate p-0 focus:ring-0 text-sm font-label-bold text-right"
+                                style="text-align: right;" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 text-xs text-secondary font-body-md">
+                        <div class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-warm-gold text-sm">verified_user</span> Full
+                            Insurance (Yes)</div>
+                        <div class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-warm-gold text-sm">sports_motorsports</span>
+                            Helmets (2)</div>
+                        <div class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-warm-gold text-sm">medical_services</span>
+                            First-Aid (Yes)</div>
+                        <div class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-warm-gold text-sm">settings</span> Transmission
+                            (<span id="modal-transmission">Auto</span>)</div>
+                        <div class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-warm-gold text-sm">support_agent</span> 24/7
+                            Support</div>
+                        <div class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-warm-gold text-sm">speed</span> Mileage
+                            (Unlimited)</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-headline-sm text-lg text-deep-slate mb-4">EXTRAS</h4>
+                        <div class="flex flex-col gap-3">
+                            <label
+                                class="flex items-center justify-between p-4 bg-surface-container-low border border-glass-stroke rounded-lg cursor-pointer hover:border-warm-gold transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" class="extra-addon w-5 h-5 accent-warm-gold" value="1"
+                                        data-name="Power Bank" onchange="calculateTotal()" />
+                                    <span class="font-label-bold text-deep-slate">Power Bank</span>
+                                </div>
+                                <span class="font-bold text-warm-gold">+$1/day</span>
+                            </label>
+                            <label
+                                class="flex items-center justify-between p-4 bg-surface-container-low border border-glass-stroke rounded-lg cursor-pointer hover:border-warm-gold transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" class="extra-addon w-5 h-5 accent-warm-gold" value="1"
+                                        data-name="Raincoat" onchange="calculateTotal()" />
+                                    <span class="font-label-bold text-deep-slate">Raincoat</span>
+                                </div>
+                                <span class="font-bold text-warm-gold">+$1/day</span>
+                            </label>
+                            <label
+                                class="flex items-center justify-between p-4 bg-surface-container-low border border-glass-stroke rounded-lg cursor-pointer hover:border-warm-gold transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" class="extra-addon w-5 h-5 accent-warm-gold" value="0.5"
+                                        data-name="Surf Rack" onchange="calculateTotal()" />
+                                    <span class="font-label-bold text-deep-slate">Surf Rack</span>
+                                </div>
+                                <span class="font-bold text-warm-gold">+$0.50/day</span>
+                            </label>
+                            <label
+                                class="flex items-center justify-between p-4 bg-surface-container-low border border-glass-stroke rounded-lg cursor-pointer hover:border-warm-gold transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" class="extra-addon w-5 h-5 accent-warm-gold" value="2"
+                                        data-name="Pocket WiFi 4G" onchange="calculateTotal()" />
+                                    <span class="font-label-bold text-deep-slate">Pocket WiFi 4G</span>
+                                </div>
+                                <span class="font-bold text-warm-gold">+$2/day</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-8 bg-deep-slate p-6 rounded-xl text-surface-container-lowest flex justify-between items-center shadow-lg">
+                        <span class="font-label-bold text-surface-variant uppercase tracking-widest text-sm">Estimated
+                            Total</span>
+                        <div class="text-right">
+                            <span id="modal-total-price" class="text-3xl font-bold text-warm-gold">$0</span>
+                            <div id="modal-duration-display" class="text-xs text-surface-variant mt-1">for 1 day(s)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-headline-sm text-lg text-deep-slate mb-4 uppercase tracking-widest text-sm font-bold">
+                    Personal Information</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <div>
+                        <label class="block font-label-bold text-xs text-secondary mb-1">First Name</label>
+                        <input id="booking-fname" type="text"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="John" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-xs text-secondary mb-1">Last Name</label>
+                        <input id="booking-lname" type="text"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="Doe" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-xs text-secondary mb-1">Age</label>
+                        <input id="booking-age" type="number"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="25" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-xs text-secondary mb-1">WhatsApp Number</label>
+                        <input id="booking-phone" type="tel"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="+94 77 XXX XXXX" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-xs text-secondary mb-1">Email</label>
+                        <input id="booking-email" type="email"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="john@example.com" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-xs text-secondary mb-1">City</label>
+                        <input id="booking-city" type="text"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="Colombo" />
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block font-label-bold text-xs text-secondary mb-1">Street Address</label>
+                        <input id="booking-address" type="text"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="123 Main St, Apt 4B" />
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-xs text-secondary mb-1">Country</label>
+                        <input id="booking-country" type="text"
+                            class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
+                            placeholder="United Kingdom" />
+                    </div>
+                </div>
+
+                <input type="hidden" id="booking-pickup" />
+                <input type="hidden" id="booking-return" />
+                <input type="hidden" id="booking-location" />
+
+                <button onclick="confirmBooking()"
+                    class="w-full bg-warm-gold text-on-primary font-button text-button py-4 rounded-lg hover:bg-warm-gold/90 transition-colors flex items-center justify-center gap-2 shadow-lg">
+                    <span class="material-symbols-outlined">electric_moped</span>
+                    BOOK NOW VIA WHATSAPP
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function scrollToSearch() {
+            document.getElementById('vehicles').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showToastAlert(message) {
+            let toast = document.getElementById('toast-alert');
+            if (!toast) {
+                toast = document.createElement('div');
+                toast.id = 'toast-alert';
+                toast.className = 'fixed top-24 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-lg shadow-xl z-[100] transition-opacity duration-300 opacity-0 flex items-center gap-2';
+                toast.innerHTML = `<span class="material-symbols-outlined">warning</span> <span>${message}</span>`;
+                document.body.appendChild(toast);
+            } else {
+                toast.querySelector('span:last-child').innerText = message;
+            }
+
+            toast.style.display = 'flex';
+            setTimeout(() => toast.classList.remove('opacity-0'), 10);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.style.display = 'none', 300);
+            }, 3000);
+        }
+
+        function executeSearch() {
+            const pickup = document.getElementById('search-pickup');
+            const dropoff = document.getElementById('search-dropoff');
+            const typeSelect = document.getElementById('search-type');
+            const locationSelect = document.getElementById('search-location');
+            const dateContainer = document.getElementById('search-date-container');
+
+            if (!pickup.value || !dropoff.value) {
+                showToastAlert("Please select your Pick-up & Drop-off dates before searching!");
+                if (dateContainer) {
+                    dateContainer.classList.add('border-red-500', 'ring-2', 'ring-red-300', 'animate-shake', 'rounded-md');
+                    setTimeout(() => {
+                        dateContainer.classList.remove('border-red-500', 'ring-2', 'ring-red-300', 'animate-shake', 'rounded-md');
+                    }, 2000);
+                }
+                return;
+            }
+
+            if (new Date(dropoff.value) < new Date(pickup.value)) {
+                showToastAlert("Drop-off Date cannot be earlier than Pick-up Date!");
+                if (dateContainer) {
+                    dateContainer.classList.add('border-red-500', 'ring-2', 'ring-red-300', 'animate-shake', 'rounded-md');
+                    setTimeout(() => {
+                        dateContainer.classList.remove('border-red-500', 'ring-2', 'ring-red-300', 'animate-shake', 'rounded-md');
+                    }, 2000);
+                }
+                return;
+            }
+
+            if (pickup && dropoff && pickup.value && dropoff.value) {
+                globalSearchLocation = locationSelect ? locationSelect.value : '';
+                globalSearchPickup = pickup.value;
+                globalSearchDropoff = dropoff.value;
+            }
+
+            document.getElementById('vehicles').scrollIntoView({ behavior: 'smooth' });
+
+            if (typeSelect && typeSelect.value && typeSelect.value !== 'Vehicle Type') {
+                setTimeout(() => {
+                    filterVehicles(typeSelect.value);
+                }, 300);
+            }
+        }
+
+        function filterVehicles(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.replace('bg-surface-container', 'bg-deep-slate');
+                    btn.classList.replace('text-deep-slate', 'text-surface-container-lowest');
+                    btn.classList.remove('hover:bg-surface-variant');
+                } else {
+                    if (btn.classList.contains('bg-deep-slate')) {
+                        btn.classList.replace('bg-deep-slate', 'bg-surface-container');
+                        btn.classList.replace('text-surface-container-lowest', 'text-deep-slate');
+                        btn.classList.add('hover:bg-surface-variant');
+                    }
+                }
+            });
+
+            const cards = document.querySelectorAll('.bike-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 50);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
+                    setTimeout(() => { card.style.display = 'none'; }, 500);
+                }
+            });
+        }
+
+        let globalSearchLocation = '';
+        let globalSearchPickup = '';
+        let globalSearchDropoff = '';
+
+        let selectedBike = 'General Booking';
+        let selectedBasePrice = 0;
+
+        function syncModalDates() {
+            const pickup = document.getElementById('modal-date-input-pickup').value;
+            const dropoff = document.getElementById('modal-date-input-dropoff').value;
+            document.getElementById('booking-pickup').value = pickup;
+            document.getElementById('booking-return').value = dropoff;
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            const pickupStr = document.getElementById('booking-pickup').value;
+            const dropoffStr = document.getElementById('booking-return').value;
+            let days = 1;
+
+            if (pickupStr && dropoffStr) {
+                const start = new Date(pickupStr);
+                const end = new Date(dropoffStr);
+                const diffTime = end - start;
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                if (diffDays > 0) {
+                    days = diffDays;
+                }
+            }
+
+            document.getElementById('modal-duration-display').innerText = `for ${days} day(s)`;
+
+            let dailyRate = selectedBasePrice;
+            const extras = document.querySelectorAll('.extra-addon:checked');
+            extras.forEach(extra => {
+                dailyRate += parseFloat(extra.value);
+            });
+
+            const grandTotal = dailyRate * days;
+            document.getElementById('modal-total-price').innerText = `$${grandTotal.toFixed(2)}`;
+            return grandTotal;
+        }
+
+        function openModal(btnElement) {
+            const modal = document.getElementById('booking-modal');
+            const modalCard = document.getElementById('modal-card');
+
+            const titleEl = document.getElementById('modal-bike-title');
+            const priceEl = document.getElementById('modal-bike-price');
+            const catEl = document.getElementById('modal-bike-category');
+            const imgEl = document.getElementById('modal-bike-image');
+            const transEl = document.getElementById('modal-transmission');
+
+            document.querySelectorAll('.extra-addon').forEach(cb => cb.checked = false);
+
+            if (btnElement && btnElement.closest('.group')) {
+                const card = btnElement.closest('.group');
+                const cardTitle = card.querySelector('h3');
+                const cardPrice = card.querySelector('.text-2xl');
+                const cardImg = card.querySelector('img');
+                const cardCat = card.getAttribute('data-category');
+
+                selectedBike = cardTitle ? cardTitle.innerText : 'General Booking';
+
+                if (cardPrice) {
+                    selectedBasePrice = parseFloat(cardPrice.innerText.replace('$', ''));
+                    priceEl.innerText = `$${selectedBasePrice}`;
+                } else {
+                    selectedBasePrice = 0;
+                    priceEl.innerText = `$0`;
+                }
+
+                titleEl.innerText = selectedBike;
+                catEl.innerText = cardCat ? cardCat : 'Vehicle';
+                transEl.innerText = cardCat === 'scooters' ? 'Auto' : 'Manual';
+
+                if (cardImg) {
+                    imgEl.src = cardImg.src;
+                    imgEl.classList.remove('hidden');
+                } else {
+                    imgEl.classList.add('hidden');
+                }
+            } else {
+                selectedBike = 'General Booking';
+                selectedBasePrice = 0;
+                titleEl.innerText = selectedBike;
+                priceEl.innerText = `$0`;
+                catEl.innerText = 'Any';
+                imgEl.classList.add('hidden');
+                transEl.innerText = 'Any';
+            }
+
+            const modalLocation = document.getElementById('booking-location');
+            const modalPickup = document.getElementById('booking-pickup');
+            const modalDropoff = document.getElementById('booking-return');
+
+            if (globalSearchLocation) modalLocation.value = globalSearchLocation;
+            modalPickup.value = globalSearchPickup || '';
+            modalDropoff.value = globalSearchDropoff || '';
+
+            const dateInputPickup = document.getElementById('modal-date-input-pickup');
+            const dateInputDropoff = document.getElementById('modal-date-input-dropoff');
+            if (dateInputPickup) dateInputPickup.value = globalSearchPickup || '';
+            if (dateInputDropoff) dateInputDropoff.value = globalSearchDropoff || '';
+
+            calculateTotal();
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalCard.classList.remove('scale-95');
+                modalCard.classList.add('scale-100');
+            }, 10);
+
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('booking-modal');
+            const modalCard = document.getElementById('modal-card');
+
+            modal.classList.add('opacity-0');
+            modalCard.classList.remove('scale-100');
+            modalCard.classList.add('scale-95');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, 300);
+        }
+
+        function confirmBooking() {
+            const fname = document.getElementById('booking-fname').value;
+            const lname = document.getElementById('booking-lname').value;
+            const age = document.getElementById('booking-age').value;
+            const phone = document.getElementById('booking-phone').value;
+            const email = document.getElementById('booking-email').value;
+            const address = document.getElementById('booking-address').value;
+            const city = document.getElementById('booking-city').value;
+            const country = document.getElementById('booking-country').value;
+
+            const pickup = document.getElementById('booking-pickup').value;
+            const dropoff = document.getElementById('booking-return').value;
+            const location = document.getElementById('booking-location').value;
+
+            if (!fname || !phone) {
+                alert("Please fill in at least your First Name and Phone Number.");
+                return;
+            }
+
+            let extrasList = [];
+            document.querySelectorAll('.extra-addon:checked').forEach(cb => extrasList.push(cb.getAttribute('data-name')));
+            const extrasString = extrasList.length > 0 ? extrasList.join(', ') : 'None';
+            const grandTotal = calculateTotal();
+
+            const message = `*New Booking Request*%0A%0A*Vehicle Details*%0ABike: ${selectedBike}%0AEst. Total: $${grandTotal.toFixed(2)}%0AExtras: ${extrasString}%0A%0A*Rental Schedule*%0APick-up: ${pickup || 'TBD'}%0AReturn: ${dropoff || 'TBD'}%0ALocation: ${location || 'TBD'}%0A%0A*Personal Info*%0AName: ${fname} ${lname}%0AAge: ${age}%0APhone: ${phone}%0AEmail: ${email}%0AAddress: ${address}, ${city}, ${country}`;
+
+            const whatsappUrl = `https://wa.me/94770000000?text=${message}`;
+
+            window.open(whatsappUrl, '_blank');
+            closeModal();
+        }
+
+        function closeIdpModal() {
+            sessionStorage.setItem('idp_modal_shown', 'true');
+            const modal = document.getElementById('idp-modal');
+            const modalCard = document.getElementById('idp-modal-card');
+
+            modal.classList.add('opacity-0');
+            modalCard.classList.remove('scale-100');
+            modalCard.classList.add('scale-95');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 500);
+        }
+
+        function toggleChat() {
+            const chatWidget = document.getElementById('chat-widget');
+            if (chatWidget.classList.contains('scale-0')) {
+                chatWidget.classList.remove('scale-0', 'opacity-0', 'pointer-events-none');
+                chatWidget.classList.add('scale-100', 'opacity-100');
+            } else {
+                chatWidget.classList.remove('scale-100', 'opacity-100');
+                chatWidget.classList.add('scale-0', 'opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function appendUserMessage(text) {
+            const container = document.getElementById('chat-messages');
+            const chips = document.getElementById('chat-quick-chips');
+            if (chips) chips.style.display = 'none';
+
+            const msgHtml = `
+                <div class="flex gap-2 items-end justify-end max-w-[85%] self-end mt-2 transition-all duration-300 transform translate-y-0 opacity-100">
+                    <div class="bg-warm-gold text-white text-sm p-3 rounded-2xl rounded-br-none shadow-sm font-body-md leading-relaxed">
+                        ${text}
+                    </div>
+                </div>
+            `;
+            container.insertAdjacentHTML('beforeend', msgHtml);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function appendBotMessage(text, isHtml = false) {
+            const container = document.getElementById('chat-messages');
+            const msgHtml = `
+                <div class="flex gap-2 items-end max-w-[85%] mt-2 transition-all duration-300 transform translate-y-0 opacity-100">
+                    <div class="w-8 h-8 rounded-full bg-deep-slate flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <span class="material-symbols-outlined text-warm-gold text-sm">support_agent</span>
+                    </div>
+                    <div class="bg-surface-container-low text-deep-slate text-sm p-3 rounded-2xl rounded-bl-none shadow-sm border border-glass-stroke font-body-md leading-relaxed">
+                        ${text}
+                    </div>
+                </div>
+            `;
+            setTimeout(() => {
+                container.insertAdjacentHTML('beforeend', msgHtml);
+                container.scrollTop = container.scrollHeight;
+            }, 600);
+        }
+
+        function sendQuickReply(query) {
+            appendUserMessage(query);
+
+            if (query === 'Bike Rates & Models') {
+                appendBotMessage("Our premium vehicles start from just $15/day for Scooters, $25/day for Trail bikes, and $30/day for Cruisers. All rentals include unlimited mileage and 2 helmets! Feel free to browse the 'Choose Your Vehicle' section above.");
+            } else if (query === 'Pickup Locations') {
+                appendBotMessage("We offer convenient pickup and drop-off at Colombo Airport, Negombo, Galle, and Ella. We can also arrange custom delivery to your hotel for a small fee.");
+            } else if (query === 'License / IDP Rules') {
+                appendBotMessage("Foreign riders need an International Driving Permit (IDP) with motorcycle endorsement. If you don't have one, you can easily apply online and get it within minutes!");
+            } else {
+                appendBotMessage(`Connecting you to a human...<br><br><a href="https://wa.me/94770000000" target="_blank" class="inline-block mt-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-bold shadow hover:bg-[#20bd5a] transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-sm">chat</span> Connect via WhatsApp</a>`, true);
+            }
+        }
+
+        function handleChatSubmit(e) {
+            e.preventDefault();
+            const input = document.getElementById('chat-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendUserMessage(text);
+            input.value = '';
+
+            const lowerText = text.toLowerCase();
+            let response = "";
+
+            if (lowerText.match(/price|cost|rate/)) {
+                response = "Our rental rates range from $15 to $30 per day depending on the vehicle type (Scooter, Trail, or Cruiser). All prices are calculated in USD but can be paid in LKR at the current exchange rate.";
+            } else if (lowerText.match(/deposit|card/)) {
+                response = "Great news! We don't require a credit card deposit. We only ask for a small cash deposit (around $50-$100) and a copy of your passport which is fully refundable when you return the bike.";
+            } else if (lowerText.match(/license|idp|permit/)) {
+                response = "You'll need a valid International Driving Permit (IDP) with a motorcycle endorsement. Don't have one? You can easily apply online in minutes!";
+            } else if (lowerText.match(/pickup|location|airport/)) {
+                response = "We have convenient delivery points at Colombo Airport, Negombo, Galle, and Ella. We can also deliver directly to your hotel!";
+            } else if (lowerText.match(/insurance|helmet/)) {
+                response = "Your safety is our priority. Every rental includes full comprehensive insurance and 2 sanitized helmets free of charge.";
+            } else if (lowerText.match(/human|whatsapp|call/)) {
+                response = `Connecting you to a human...<br><br><a href="https://wa.me/94770000000" target="_blank" class="inline-block mt-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-bold shadow hover:bg-[#20bd5a] transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-sm">chat</span> Connect via WhatsApp</a>`;
+            } else {
+                response = `I'm here to help with rentals, rates, and locations! Would you like to chat directly with our team on WhatsApp?<br><br><a href="https://wa.me/94770000000?text=Hi, I have a question: ${encodeURIComponent(text)}" target="_blank" class="inline-block mt-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-bold shadow hover:bg-[#20bd5a] transition-colors flex items-center gap-2"><span class="material-symbols-outlined text-sm">chat</span> Connect via WhatsApp</a>`;
+            }
+
+            appendBotMessage(response, true);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const preloader = document.getElementById('preloader');
+
+            setTimeout(() => {
+                preloader.classList.add('state-peek');
+            }, 1200);
+
+            setTimeout(() => {
+                preloader.classList.replace('state-peek', 'state-split');
+                setTimeout(() => preloader.remove(), 1300);
+            }, 2200);
+
+            setTimeout(() => {
+                if (!sessionStorage.getItem('idp_modal_shown')) {
+                    const idpModal = document.getElementById('idp-modal');
+                    const idpCard = document.getElementById('idp-modal-card');
+                    if (idpModal && idpCard) {
+                        idpModal.classList.remove('hidden');
+                        setTimeout(() => {
+                            idpModal.classList.remove('opacity-0');
+                            idpCard.classList.remove('scale-95');
+                            idpCard.classList.add('scale-100');
+                        }, 50);
+                    }
+                }
+            }, 2500);
+
+            const heroVideo = document.getElementById('hero-video-parallax');
+            const parallaxWrappers = document.querySelectorAll('.parallax-wrapper');
+
+            let lastScrollY = window.scrollY;
+            let ticking = false;
+
+            function updateParallax() {
+                if (heroVideo) {
+                    heroVideo.style.setProperty('--parallax-y', `${lastScrollY * 0.3}px`);
+                }
+
+                parallaxWrappers.forEach(wrapper => {
+                    const rect = wrapper.parentElement.getBoundingClientRect();
+                    const viewHeight = window.innerHeight;
+                    if (rect.top <= viewHeight && rect.bottom >= 0) {
+                        const shift = (rect.top - viewHeight / 2) * 0.15;
+                        wrapper.style.setProperty('--parallax-y', `${shift}px`);
+                    }
+                });
+
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', () => {
+                lastScrollY = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            updateParallax();
+
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            if (sections.length > 0 && navLinks.length > 0) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '-50% 0px -50% 0px',
+                    threshold: 0
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            navLinks.forEach(link => {
+                                link.classList.remove('active', 'text-primary', 'dark:text-warm-gold', 'font-bold');
+                                link.classList.add('text-deep-slate', 'dark:text-surface-variant');
+                            });
+
+                            const activeId = entry.target.getAttribute('id');
+                            const activeLink = document.querySelector(`.nav-link[href="#${activeId}"]`);
+                            if (activeLink) {
+                                activeLink.classList.add('active', 'text-primary', 'dark:text-warm-gold', 'font-bold');
+                                activeLink.classList.remove('text-deep-slate', 'dark:text-surface-variant');
+                            }
+                        }
+                    });
+                }, observerOptions);
+
+                sections.forEach(sec => observer.observe(sec));
+            }
+        });
+    </script>
+</body>
+
+</html>
