@@ -52,12 +52,17 @@
         video {
             height: auto;
             max-width: 100%;
-            aspect-ratio: attr(width) / attr(height);
+            contain: size layout;
         }
 
         body {
             overflow-x: hidden;
-            width: 100vw;
+            width: 100%;
+        }
+
+        #hero {
+            min-height: 90vh;
+            contain: layout size;
         }
 
         .glass-panel {
@@ -83,12 +88,11 @@
             transform: rotate(180deg);
         }
 
-        /* Fixed CLS Preloader Overlay */
+        /* Fixed CLS Zero-Shift Preloader Overlay */
         #preloader {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
+            inset: 0;
+            width: 100vw;
             height: 100vh;
             z-index: 9999;
             display: flex;
@@ -534,7 +538,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Bike Card 1 -->
                 <div data-category="scooters"
-                    class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
+                    class="bike-card group bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-all duration-500">
                     <div class="relative h-64 overflow-hidden bg-surface-dim">
                         <div class="parallax-wrapper">
                             <img alt="Honda Dio" width="400" height="256" loading="lazy"
@@ -563,7 +567,7 @@
                 </div>
                 <!-- Bike Card 2 -->
                 <div data-category="trail"
-                    class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
+                    class="bike-card group bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-all duration-500">
                     <div class="relative h-64 overflow-hidden bg-surface-dim">
                         <div class="parallax-wrapper">
                             <img alt="Honda CRF" width="400" height="256" loading="lazy"
@@ -591,7 +595,7 @@
                 </div>
                 <!-- Bike Card 3 -->
                 <div data-category="cruisers"
-                    class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
+                    class="bike-card group bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-all duration-500">
                     <div class="relative h-64 overflow-hidden bg-surface-dim">
                         <div class="parallax-wrapper">
                             <img alt="Royal Enfield" width="400" height="256" loading="lazy"
