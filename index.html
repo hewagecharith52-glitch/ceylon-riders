@@ -8,12 +8,12 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" media="print" onload="this.media='all'" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" media="print" onload="this.media='all'" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -497,7 +497,7 @@
                 class="glass-panel rounded-xl shadow-2xl p-2 md:p-4 flex flex-col md:flex-row gap-4 items-center justify-between">
                 <div class="flex-1 w-full px-4 py-2 border-b md:border-b-0 md:border-r border-glass-stroke">
                     <label class="block font-label-bold text-label-bold text-deep-slate mb-1">Pick-up Location</label>
-                    <select id="search-location"
+                    <select id="search-location" aria-label="Pick-up Location"
                         class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md">
                         <option>Colombo Airport</option>
                         <option>Negombo</option>
@@ -512,18 +512,18 @@
                         Drop-off</label>
                     <div class="flex items-center gap-2 border-b border-transparent transition-colors duration-300"
                         id="search-date-container">
-                        <input id="search-pickup"
+                        <input id="search-pickup" aria-label="Pick-up Date"
                             class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md placeholder-deep-slate/50"
                             type="date" />
                         <span class="text-deep-slate/50">-</span>
-                        <input id="search-dropoff"
+                        <input id="search-dropoff" aria-label="Drop-off Date"
                             class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md placeholder-deep-slate/50"
                             type="date" />
                     </div>
                 </div>
                 <div class="flex-1 w-full px-4 py-2">
                     <label class="block font-label-bold text-label-bold text-deep-slate mb-1">Vehicle Type</label>
-                    <select id="search-type"
+                    <select id="search-type" aria-label="Vehicle Type"
                         class="w-full bg-transparent border-none text-deep-slate focus:ring-0 p-0 text-body-md">
                         <option value="all">All Types</option>
                         <option value="scooters">Scooters</option>
@@ -639,7 +639,7 @@
                     class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
                     <div class="relative h-64 overflow-hidden bg-surface-dim">
                         <div class="parallax-wrapper">
-                            <img alt="Honda Dio"
+                            <img alt="Honda Dio" width="400" height="256" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_9ro3UT68u1hPEVUg4zgErbpxsgcS7SxnVEqixiZm2hGE7XDlkkHb3Ms5wBfuZRFx51QPLvXG8mbdC5aBqC8AvGFdPG1R_46Qvm2EtOcXlXzsC39QYGNt8Ry6xK5JZ1IvP-TsyK7HcLXKWNLRv4VcxEy-_KySELx25-hLgKrgK-oA5onN4cqRXgRqzuRVSY0k64_JL1JGt0lQZofT75GFr8Ts3xHNVFh5D-VLoz56pNSpdjkyruldZA" />
                         </div>
@@ -668,7 +668,7 @@
                     class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
                     <div class="relative h-64 overflow-hidden bg-surface-dim">
                         <div class="parallax-wrapper">
-                            <img alt="Honda CRF"
+                            <img alt="Honda CRF" width="400" height="256" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhhEWRsx4UZni5uYp4Kb3kj72w6F7Ol6ah2YE2TbeO96RIXsZQoD-ylqJLhc-xCLRDNkKJAXnu9KqjO-YuoCTPa0qc5avADjpu9git5xm2NGVUA4mEQAPLwtTob6ekGudZXyCrnrRyKJJT_n2GqPpmMQVMVM8dpD3zwJHwnO_kLVo0ft7yg2XM1ZysihIHszO8nIQWzZaea3HUlf0SzEfMbQpmPlyGbeR8-7yuaNCxiRVcWwuR-YpAbw" />
                         </div>
@@ -697,7 +697,7 @@
                     class="bike-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg group transition-all duration-500">
                     <div class="relative h-64 overflow-hidden bg-surface-dim">
                         <div class="parallax-wrapper">
-                            <img alt="Royal Enfield"
+                            <img alt="Royal Enfield" width="400" height="256" loading="lazy"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCpGh-KHGyFaLEws3BsoK33qXj7lU2-LvNKv5Bh03Lu6dTNd_QBeLjYRv2cDQbwJukRqUC-JiVacFmRc3vgiweOGyX1V3TbXEZH-Xt5NkkVF0Tp2O-fdHqFs3PCCODUaqSYU45S52NhQE0DuIpFPDEwjq1tK01GoSdjt_yypP4wDN7qfRfEfRf9-J1blYAshamLmwIp21ExfHm1seRE3i-Z0_z_gDqN0ykKKMrOTdNHgiSaVXe8K3RDw" />
                         </div>
@@ -735,23 +735,23 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
                 <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">local_shipping</span>
-                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Free Delivery</h4>
+                <h3 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Free Delivery</h3>
                 <p class="font-body-md text-secondary text-sm">Airport or hotel delivery across major coastal towns.</p>
             </div>
             <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
                 <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">sports_motorsports</span>
-                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Unlimited Mileage</h4>
+                <h3 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Unlimited Mileage</h3>
                 <p class="font-body-md text-secondary text-sm">Explore without limits. Includes 2 high-quality helmets.
                 </p>
             </div>
             <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
                 <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">verified_user</span>
-                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Full Insurance</h4>
+                <h3 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">Full Insurance</h3>
                 <p class="font-body-md text-secondary text-sm">Comprehensive coverage for peace of mind on the road.</p>
             </div>
             <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-xl shadow-sm">
                 <span class="material-symbols-outlined text-5xl text-warm-gold mb-4">support_agent</span>
-                <h4 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">24/7 Support</h4>
+                <h3 class="font-headline-sm text-lg font-bold text-deep-slate mb-2">24/7 Support</h3>
                 <p class="font-body-md text-secondary text-sm">Round-the-clock roadside assistance anywhere in Sri
                     Lanka.</p>
             </div>
@@ -769,7 +769,7 @@
                 <!-- Route 1 -->
                 <div class="group relative rounded-2xl overflow-hidden h-96 cursor-pointer">
                     <div class="parallax-wrapper">
-                        <img alt="South Coast"
+                        <img alt="South Coast" width="600" height="384" loading="lazy"
                             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_xhUv-YFkUtTpxe-4CGt6DsnEsFW580FLRX4EqEQuiGLAftvzRX8Pmnx1fGGWF2mtAk0J9MSaMvYqGBiLG5tKSBvGAfntRp7fp_YH3cKND8IcoIrm01Zvn79GRk3HUP7NUcLSXmsLnEixfrog26C1KuBEW_xRVCLg9cNTgHuLa-n7BXr-bhJUpoqFz-xuH6xgAxx2Dmgjq7IN3Pm3c3RRUlAW1m8B29_uTyxV-dnwRqebDT_mQEpCoQ" />
                     </div>
@@ -791,7 +791,7 @@
                 <!-- Route 2 -->
                 <div class="group relative rounded-2xl overflow-hidden h-96 cursor-pointer">
                     <div class="parallax-wrapper">
-                        <img alt="Hill Country"
+                        <img alt="Hill Country" width="600" height="384" loading="lazy"
                             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPykLGVIbcMon5bzgAdKvHDRp0MlVcbA1IFu9E7sXRZZSRZ7wKYDvaLXoQF0RyQoaG5R4FIDKvLJclWsYsjkM7uhBojvggzwf7P1UAxcoaerc_UABfvmNIiPRk0CqGpzG76QlfrE1KNmG93f4Sa6SGs1tHp4I0nYc6bxnFXrDMsg4p_odFLz-0tr2pFACZaoKrcs5a6SAtV7aFlJKxIOjuyHeukpW4gWgyXJjdtryVRqiShPy0w-OKJg" />
                     </div>
@@ -839,7 +839,7 @@
                         recommend for exploring the island."</p>
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
-                            <img alt="Sarah M." class="w-full h-full object-cover"
+                            <img alt="Sarah M." class="w-full h-full object-cover" width="48" height="48" loading="lazy"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdncGmemtXtEsoqPN-t9I91eSezKRJy_2kf8NpFNmBoTEc3aBTYLH50Yjd2hkoz05SAtQONjfG0Ie9_mqlsW5_fnd_O7uuwrsyTK7SPfj_-uxNO4MjkG8MsWAYYcyoylstpGxQFsY6ZTOQOely_-b2Xis7cNkQkhiuakWuesu0HScJYh-PMU_C6F7JrXNE4s5xOJNpWA-s-g34wX-at8N_15aAfGE8qrNLxLX2ZCBcQ80bdEdZ80RVkQ" />
                         </div>
                         <div>
@@ -858,7 +858,7 @@
                         end."</p>
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
-                            <img alt="Mark D." class="w-full h-full object-cover"
+                            <img alt="Mark D." class="w-full h-full object-cover" width="48" height="48" loading="lazy"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkFfuhow_9QpexHuFarr8pRfnThF2tlbskPbTyOu7g8H4QRRCNB27sjcCqOG_lzLajxYNGVp7QuknGFeYFsQdpZMRVroe4gqqdb7q6IYkwFohgBSh48CcdRlwbexTHvPliHlAT3b-CuQcqrCLW4cvfrDz5epNjqoHIBaUJSwjlF8ezbMf9ITsSQMRApAWZAAqP08jQf-bCkZ_6g3eJtF1s2AGCGYIR6oNdIcRD2CasKAepFrOVQ1HyGg" />
                         </div>
                         <div>
@@ -877,7 +877,7 @@
                         unforgettable."</p>
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
-                            <img alt="Johan V." class="w-full h-full object-cover"
+                            <img alt="Johan V." class="w-full h-full object-cover" width="48" height="48" loading="lazy"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiZzcdAFfU3anUd1JUhh52Uk-MG4GrL-nz6F36bszMINSMuV_IF5-Vw54fMFHGOZaqTQnzK7sH6B1iDSHIpeErt9QzWilsjLbFL2guD8-oLn-96Aiv0A0EPwkbO-J2N3hXSoC_QSBeqEGOIAkUC3JAV-yncrGF_siUlILiM2HaEj0hcqlLeMkUH8UBx3sVIrir2RSESOG_RvRRj13lhEZvUZw1YVjA80hc6Pg961CjkhV70L4yyVM7aA" />
                         </div>
                         <div>
@@ -943,8 +943,8 @@
                     <label
                         class="flex justify-between items-center p-6 cursor-pointer accordion-header hover:bg-surface-container-low transition-colors"
                         for="faq1">
-                        <h4 class="font-headline-sm text-lg font-bold text-deep-slate">Do I need an International
-                            Driving Permit (IDP)?</h4>
+                        <h3 class="font-headline-sm text-lg font-bold text-deep-slate">Do I need an International
+                            Driving Permit (IDP)?</h3>
                         <span
                             class="material-symbols-outlined text-warm-gold transition-transform duration-300">expand_more</span>
                     </label>
@@ -961,8 +961,8 @@
                     <label
                         class="flex justify-between items-center p-6 cursor-pointer accordion-header hover:bg-surface-container-low transition-colors"
                         for="faq2">
-                        <h4 class="font-headline-sm text-lg font-bold text-deep-slate">What does the insurance cover?
-                        </h4>
+                        <h3 class="font-headline-sm text-lg font-bold text-deep-slate">What does the insurance cover?
+                        </h3>
                         <span
                             class="material-symbols-outlined text-warm-gold transition-transform duration-300">expand_more</span>
                     </label>
@@ -979,7 +979,7 @@
                     <label
                         class="flex justify-between items-center p-6 cursor-pointer accordion-header hover:bg-surface-container-low transition-colors"
                         for="faq3">
-                        <h4 class="font-headline-sm text-lg font-bold text-deep-slate">What is the deposit policy?</h4>
+                        <h3 class="font-headline-sm text-lg font-bold text-deep-slate">What is the deposit policy?</h3>
                         <span
                             class="material-symbols-outlined text-warm-gold transition-transform duration-300">expand_more</span>
                     </label>
@@ -1010,7 +1010,7 @@
                                 <span class="material-symbols-outlined text-[#25D366]">chat</span>
                             </div>
                             <div>
-                                <h4 class="font-label-bold text-deep-slate mb-1">WhatsApp (Fastest)</h4>
+                                <h3 class="font-label-bold text-deep-slate mb-1">WhatsApp (Fastest)</h3>
                                 <a class="text-body-md font-bold text-primary hover:underline" href="#">+94 77 123
                                     4567</a>
                             </div>
@@ -1021,7 +1021,7 @@
                                 <span class="material-symbols-outlined text-warm-gold">call</span>
                             </div>
                             <div>
-                                <h4 class="font-label-bold text-deep-slate mb-1">Phone</h4>
+                                <h3 class="font-label-bold text-deep-slate mb-1">Phone</h3>
                                 <a class="text-body-md font-bold text-primary hover:underline"
                                     href="tel:+94771234567">+94 77 123 4567</a>
                             </div>
@@ -1032,7 +1032,7 @@
                                 <span class="material-symbols-outlined text-warm-gold">mail</span>
                             </div>
                             <div>
-                                <h4 class="font-label-bold text-deep-slate mb-1">Email</h4>
+                                <h3 class="font-label-bold text-deep-slate mb-1">Email</h3>
                                 <a class="text-body-md font-bold text-primary hover:underline"
                                     href="mailto:hello@ceylonriders.com">hello@ceylonriders.com</a>
                             </div>
@@ -1043,7 +1043,7 @@
                                 <span class="material-symbols-outlined text-warm-gold">location_on</span>
                             </div>
                             <div>
-                                <h4 class="font-label-bold text-deep-slate mb-1">Main Office</h4>
+                                <h3 class="font-label-bold text-deep-slate mb-1">Main Office</h3>
                                 <p class="text-body-md text-secondary">123 Beach Road, Negombo, Sri Lanka</p>
                             </div>
                         </div>
@@ -1088,7 +1088,7 @@
     </footer>
 
     <!-- Floating Action Button -->
-    <button onclick="toggleChat()"
+    <button onclick="toggleChat()" aria-label="Open Chatbot Support"
         class="fixed bottom-2 right-6 md:bottom-3 md:right-8 z-[60] w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
         <span class="material-symbols-outlined text-3xl leading-none">chat</span>
     </button>
@@ -1111,7 +1111,7 @@
                     <span class="text-xs text-surface-variant font-label-bold">Online | Instant Support</span>
                 </div>
             </div>
-            <button onclick="toggleChat()"
+            <button onclick="toggleChat()" aria-label="Close Chatbot"
                 class="relative z-10 text-surface-variant hover:text-white transition-colors">
                 <span class="material-symbols-outlined">close</span>
             </button>
@@ -1147,10 +1147,10 @@
 
         <div class="p-3 bg-surface-container-lowest border-t border-glass-stroke">
             <form onsubmit="handleChatSubmit(event)" class="relative flex items-center">
-                <input type="text" id="chat-input"
+                <input type="text" id="chat-input" aria-label="Chat Message"
                     class="w-full bg-surface-container-low border border-glass-stroke rounded-full pl-4 pr-12 py-2.5 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-sm text-deep-slate font-body-md placeholder:text-secondary"
                     placeholder="Type your message..." />
-                <button type="submit"
+                <button type="submit" aria-label="Send Message"
                     class="absolute right-1 w-8 h-8 flex items-center justify-center bg-warm-gold text-white rounded-full hover:scale-105 transition-transform">
                     <span class="material-symbols-outlined text-sm">send</span>
                 </button>
@@ -1162,19 +1162,25 @@
     <div id="idp-modal"
         class="fixed inset-0 z-[110] flex items-center justify-center hidden opacity-0 transition-opacity duration-500">
         <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="closeIdpModal()"></div>
-        <div class="relative w-[90%] max-w-xl bg-transparent rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-500 group"
+        <div class="relative w-[90%] max-w-xl bg-transparent rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-500 group z-20"
             id="idp-modal-card">
-            <button onclick="closeIdpModal()"
-                class="absolute top-[12px] right-[12px] z-30 text-white/80 hover:text-white bg-black/30 hover:bg-black/50 transition-colors rounded-full p-1.5 backdrop-blur-md flex items-center justify-center">
+            <button onclick="closeIdpModal()" aria-label="Close Modal"
+                class="absolute top-[12px] right-[12px] z-50 text-white/80 hover:text-white bg-black/30 hover:bg-black/50 transition-colors rounded-full p-1.5 backdrop-blur-md flex items-center justify-center">
                 <span class="material-symbols-outlined text-xl leading-none">close</span>
             </button>
+
+            <!-- Corrected IDP Poster with Floating Orange CTA Button -->
             <a href="https://idaoffice.org/apply-now/?agentid=1469" target="_blank" onclick="closeIdpModal()"
-                class="block relative w-full h-full cursor-pointer">
-                <img src="Licen/scooter_poster.png" alt="International Driving Permit"
-                    class="w-full h-auto object-cover object-center block" />
-                <div class="absolute bottom-8 right-6 md:right-10 z-30 bg-[#F2994A] hover:bg-[#e0883b] text-white font-bold py-3 px-6 rounded-xl transition-all flex items-center gap-2 shadow-lg text-sm md:text-base">
-                    <span class="material-symbols-outlined text-lg md:text-xl">language</span>
-                    Apply For License Online
+                class="block relative w-full h-full cursor-pointer z-10">
+                <img src="Licen/scooter_poster.png" alt="International Driving Permit" width="600" height="800"
+                    loading="lazy" class="w-full h-auto object-cover object-center block" />
+
+                <div class="absolute bottom-6 md:bottom-8 right-6 md:right-10 z-40 flex justify-end">
+                    <div
+                        class="bg-[#F2994A] hover:bg-[#e0883b] text-white font-bold py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2 shadow-2xl text-sm md:text-base border border-white/20">
+                        <span class="material-symbols-outlined text-lg md:text-xl">language</span>
+                        Apply For License Online
+                    </div>
                 </div>
             </a>
         </div>
@@ -1186,7 +1192,7 @@
         <div class="absolute inset-0 bg-black/60 backdrop-blur-md" onclick="closeModal()"></div>
         <div class="relative bg-surface-container-lowest w-[90%] max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-6 md:p-8 transform scale-95 transition-transform duration-300"
             id="modal-card">
-            <button onclick="closeModal()"
+            <button onclick="closeModal()" aria-label="Close Booking Modal"
                 class="absolute top-4 right-4 text-secondary hover:text-deep-slate transition-colors">
                 <span class="material-symbols-outlined text-2xl">close</span>
             </button>
@@ -1216,20 +1222,23 @@
                         <span
                             class="material-symbols-outlined absolute text-9xl text-deep-slate/5 -z-10">two_wheeler</span>
                         <img id="modal-bike-image" src="" class="w-full h-full object-contain drop-shadow-2xl hidden"
-                            alt="Vehicle Image" />
+                            alt="Vehicle Image" width="400" height="192" />
                     </div>
 
                     <div
                         class="bg-surface-container-lowest rounded-lg p-3 mb-6 flex justify-between items-center text-sm font-label-bold">
                         <div class="flex flex-col w-[45%]">
-                            <label class="text-secondary text-xs mb-1">Pick-up</label>
+                            <label class="text-secondary text-xs mb-1" for="modal-date-input-pickup">Pick-up</label>
                             <input type="date" id="modal-date-input-pickup" onchange="syncModalDates()"
+                                aria-label="Pickup Modal Date"
                                 class="w-full bg-transparent border-none text-deep-slate p-0 focus:ring-0 text-sm font-label-bold" />
                         </div>
                         <span class="material-symbols-outlined text-warm-gold">arrow_forward</span>
                         <div class="flex flex-col w-[45%] items-end">
-                            <label class="text-secondary text-xs mb-1 w-full text-right">Drop-off</label>
+                            <label class="text-secondary text-xs mb-1 w-full text-right"
+                                for="modal-date-input-dropoff">Drop-off</label>
                             <input type="date" id="modal-date-input-dropoff" onchange="syncModalDates()"
+                                aria-label="Dropoff Modal Date"
                                 class="w-full bg-transparent border-none text-deep-slate p-0 focus:ring-0 text-sm font-label-bold text-right"
                                 style="text-align: right;" />
                         </div>
@@ -1259,7 +1268,7 @@
 
                 <div class="flex flex-col justify-between">
                     <div>
-                        <h4 class="font-headline-sm text-lg text-deep-slate mb-4">EXTRAS</h4>
+                        <h3 class="font-headline-sm text-lg text-deep-slate mb-4">EXTRAS</h3>
                         <div class="flex flex-col gap-3">
                             <label
                                 class="flex items-center justify-between p-4 bg-surface-container-low border border-glass-stroke rounded-lg cursor-pointer hover:border-warm-gold transition-colors">
@@ -1314,53 +1323,59 @@
             </div>
 
             <div>
-                <h4 class="font-headline-sm text-lg text-deep-slate mb-4 uppercase tracking-widest text-sm font-bold">
-                    Personal Information</h4>
+                <h3 class="font-headline-sm text-lg text-deep-slate mb-4 uppercase tracking-widest text-sm font-bold">
+                    Personal Information</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
                     <div>
-                        <label class="block font-label-bold text-xs text-secondary mb-1">First Name</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1" for="booking-fname">First
+                            Name</label>
                         <input id="booking-fname" type="text"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="John" />
                     </div>
                     <div>
-                        <label class="block font-label-bold text-xs text-secondary mb-1">Last Name</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1" for="booking-lname">Last
+                            Name</label>
                         <input id="booking-lname" type="text"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="Doe" />
                     </div>
                     <div>
-                        <label class="block font-label-bold text-xs text-secondary mb-1">Age</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1" for="booking-age">Age</label>
                         <input id="booking-age" type="number"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="25" />
                     </div>
                     <div>
-                        <label class="block font-label-bold text-xs text-secondary mb-1">WhatsApp Number</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1" for="booking-phone">WhatsApp
+                            Number</label>
                         <input id="booking-phone" type="tel"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="+94 77 XXX XXXX" />
                     </div>
                     <div>
-                        <label class="block font-label-bold text-xs text-secondary mb-1">Email</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1"
+                            for="booking-email">Email</label>
                         <input id="booking-email" type="email"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="john@example.com" />
                     </div>
                     <div>
-                        <label class="block font-label-bold text-xs text-secondary mb-1">City</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1" for="booking-city">City</label>
                         <input id="booking-city" type="text"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="Colombo" />
                     </div>
                     <div class="md:col-span-2">
-                        <label class="block font-label-bold text-xs text-secondary mb-1">Street Address</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1" for="booking-address">Street
+                            Address</label>
                         <input id="booking-address" type="text"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="123 Main St, Apt 4B" />
                     </div>
                     <div>
-                        <label class="block font-label-bold text-xs text-secondary mb-1">Country</label>
+                        <label class="block font-label-bold text-xs text-secondary mb-1"
+                            for="booking-country">Country</label>
                         <input id="booking-country" type="text"
                             class="w-full bg-surface-container-low border border-glass-stroke rounded-lg px-4 py-3 focus:outline-none focus:border-warm-gold focus:ring-1 focus:ring-warm-gold text-body-md"
                             placeholder="United Kingdom" />
