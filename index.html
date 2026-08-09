@@ -6,14 +6,16 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>CeylonRiders - Premium Motorbike &amp; Scooter Rentals Sri Lanka</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,1&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,1&display=swap" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" />
 
     <script id="tailwind-config">
         tailwind.config = {
@@ -62,7 +64,12 @@
 
         #hero {
             min-height: 90vh;
+            aspect-ratio: 16/9;
             contain: layout size;
+        }
+
+        .hero-title-container {
+            min-height: 200px;
         }
 
         .glass-panel {
@@ -258,6 +265,9 @@
         }
 
         #hero-video-parallax {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             transform: translateY(var(--parallax-y, 0px));
             will-change: transform;
         }
@@ -349,7 +359,7 @@
         </div>
         <div
             class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-8 mt-16 md:mt-0">
-            <div class="md:col-span-8 lg:col-span-6 flex flex-col gap-6">
+            <div class="md:col-span-8 lg:col-span-6 flex flex-col gap-6 hero-title-container">
                 <h1
                     class="font-headline-md text-3xl md:text-5xl font-bold text-surface-container-lowest drop-shadow-lg">
                     Explore Sri Lanka on Two Wheels – Premium Bike &amp; Scooter Rentals
